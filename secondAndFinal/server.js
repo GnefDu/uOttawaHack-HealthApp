@@ -18,10 +18,24 @@ console.log("Initializing DB");
 let dbInitialization = execFileSync('python', ['./db/initializer.py']).toString();
 console.log(dbInitialization);
 
-//home page (should be handled automatically, but just did it)
-app.get("/", (_,res) => {
-    res.sendFile(path.join(__dirname, '/public/index.html'));
+//GET REQUESTS
+//PATIENT
+//patient home page
+app.get("/patient", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/patient.html'));
 });
+
+app.get("/patient/signup", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/signupsheet.html'));
+});
+
+//POST REQUESTS
+app.post("/patient/signup", signup);
+
+function signup(req, res) {
+    console.log("POST /patient/signup");
+    console.log(req.body);
+}
 
 app.listen(3000);
 console.log("Server listening at http://localhost:3000\n");
