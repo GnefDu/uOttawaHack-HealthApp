@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <script src="js/events.js"></script>
 
-<script src="js/events.js"></script>
-
-<head>
+  <head>
     <title>Patient Medical History Portal</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/css/styles.css">
-    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
+  </head>
 
-<body>
-
-    <div id="header" class="jumbotron text-center">
+  <body>
+    <section>
+      <div id="header">
         <h1><b>Patient Medical History Portal</b></h1>
-    </div>
+      </div>
 
-    <div class="container-fluid">
-        <div id="content" class="jumbotron text-center">
-            <p style="font-size:large">If you need an immediate medical care</p>
-            <p style="color:red;">Call 911</p><br>
-            <p style="font-size:large">If you are experiencing a medical emergency</p>
-            <p style="color:red;">Visit an ER</p><br>
-            <p style="font-size:large">If you wish revisit a medical centre</p>
-            <p><button class="button" id="button1" onclick="hospitalInfo()">Byw Dent Dr. K</button></p>
-            <p id="button1clicked"></p>
-            <p><button class="button" id="button2" onclick="hospitalInfo()">Kines Dr. L</button></p>
-            <p id="button2clicked"></p>
-            <p><button class="button" id="button3" onclick="hospitalInfo()">PearTree Dr. C</button></p>
-            <p id="button3clicked"></p>
-            <p><button class="button" id="button4" onclick="hospitalInfo()">Wdrf DI Dr. W</button></p>
-            <p id="button4clicked"></p>
-        </div>
-    </div>
-
-
-    <div id="footer" class="jumbotron text-center" style="margin-bottom:0">
-        <p>Designed & Developed by Team CUHacks!
-            <br>Team members: <br>
-            <!-- provide linkedIn profiled for everyone -->
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel</a><br>
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Richard Kim</a><br>
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel</a><br>
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel</a><br>
+      <div class="container-fluid">
+        <div id="content">
+          <p style="font-size: large">If you need an immediate medical care</p>
+          <p style="color: red">Call 911</p>
+          <br />
+          <p style="font-size: large">
+            If you are experiencing a medical emergency
           </p>
-    </div>
+          <p style="color: red">Visit an ER</p>
+          <br />
+          <p style="font-size: large">If you wish revisit a medical centre</p>
+          <p>
+            <button class="button" id="button1" onclick="hospitalInfo()">
+              Byw Dent Dr. K
+            </button>
+          </p>
+          <p id="button1clicked"></p>
+          <p>
+            <button class="button" id="button2" onclick="hospitalInfo()">
+              Kines Dr. L
+            </button>
+          </p>
+          <p id="button2clicked"></p>
+          <p>
+            <button class="button" id="button3" onclick="hospitalInfo()">
+              PearTree Dr. C
+            </button>
+          </p>
+          <p id="button3clicked"></p>
+          <p>
+            <button class="button" id="button4" onclick="hospitalInfo()">
+              Wdrf DI Dr. W
+            </button>
+          </p>
+          <p id="button4clicked"></p>
+        </div>
+      </div>
 
-</body>
+      <div id="footer" class="jumbotron text-center" style="margin-bottom: 0">
+        <p>
+          Designed & Developed by Team CUHacks! <br />Team members:
+          <!-- provide linkedIn profiled for everyone -->
+          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
+            >Anjali Patel</a
+          >
+          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
+            >Richard Kim</a
+          >
+          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
+            >Anjali Patel</a
+          >
+          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
+            >Anjali Patel</a
+          >
+        </p>
+      </div>
+    </section>
+  </body>
 </html>

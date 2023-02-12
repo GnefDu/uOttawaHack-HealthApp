@@ -1,4 +1,8 @@
 
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 
 /* unvisited link */
 a:link {
@@ -49,8 +53,8 @@ a:active {
 
   .button {
     color:#FFFFF0;
-    width:150px;
-    height:70px;
+    width:200px;
+    height:100px;
     text-align: center;
     text-decoration: none;
     display: inline-block;

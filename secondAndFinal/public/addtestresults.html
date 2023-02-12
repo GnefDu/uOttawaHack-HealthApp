@@ -1,86 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <title>Patient Medical History Portal</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/css/styles.css">
-    
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/css/styles.css" />
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-</head>
+  </head>
 
-<body>
-
-    <div id="header" class="jumbotron text-center">
+  <body>
+    <section>
+      <div id="header">
         <h1><b>Patient Medical History Portal</b></h1>
-    </div>
+      </div>
 
-    <div class="container-fluid">
-        <div id="content" class="jumbotron text-center">
-            <p>Please add patient's medical information</p><br>
-            <form>
-                <p><label for="age">Age:</label></p>
-                <input type="text" id="age" name="age"><br><br>
+      <div class="container-fluid">
+        <div id="content">
+          <p>Please add patient's medical information</p>
+          <br />
+          <form>
+            <p><label for="age">Age:</label></p>
+            <input type="text" id="age" name="age" /><br /><br />
 
-                <p><label for="glucose">Glucose level:</label></p>
-                <input type="text" id="glucose" name="glucose"><br><br>
+            <p><label for="glucose">Glucose level:</label></p>
+            <input type="text" id="glucose" name="glucose" /><br /><br />
 
-                <p><label for="bp">Blood pressure:</label></p>
-                <input type="text" id="bp" name="bp"><br><br>
+            <p><label for="bp">Blood pressure:</label></p>
+            <input type="text" id="bp" name="bp" /><br /><br />
 
-                <p><label for="bmi">BMI:</label></p>
-                <input type="text" id="bmi" name="bmi"><br><br>
+            <p><label for="bmi">BMI:</label></p>
+            <input type="text" id="bmi" name="bmi" /><br /><br />
 
-                <p><label for="hypertension">Hypertension:</label></p>
-                <input type="text" id="hypertension" name="hypertension"><br><br>
+            <p><label for="hypertension">Hypertension:</label></p>
+            <input
+              type="text"
+              id="hypertension"
+              name="hypertension"
+            /><br /><br />
 
-                <p><label for="avg-glucose">Average Glucose:</label></p>
-                <input type="text" id="avg-glucose" name="avg-glucose"><br><br>
+            <p><label for="avg-glucose">Average Glucose:</label></p>
+            <input
+              type="text"
+              id="avg-glucose"
+              name="avg-glucose"
+            /><br /><br />
 
-                <p><label for="gender_female">Gender female:</label></p>
-                <input type="text" id="gender_female" name="gender_female"><br><br>
+            <p><label for="gender_female">Gender female:</label></p>
+            <input
+              type="text"
+              id="gender_female"
+              name="gender_female"
+            /><br /><br />
 
-                <p><label for="gender_male">Gender male:</label></p>
-                <input type="text" id="gender_male" name="gender_male"><br><br>
+            <p><label for="gender_male">Gender male:</label></p>
+            <input
+              type="text"
+              id="gender_male"
+              name="gender_male"
+            /><br /><br />
 
-                <p><label for="smoking_unknown">Smoking unknown:</label></p>
-                <input type="text" id="smoking_unknown" name="smoking_unknown"><br><br>
+            <p><label for="smoking_unknown">Smoking unknown:</label></p>
+            <input
+              type="text"
+              id="smoking_unknown"
+              name="smoking_unknown"
+            /><br /><br />
 
-                <p><label for="smoking_former">Smoking former:</label></p>
-                <input type="text" id="smoking_former" name="smoking_former"><br><br>
+            <p><label for="smoking_former">Smoking former:</label></p>
+            <input
+              type="text"
+              id="smoking_former"
+              name="smoking_former"
+            /><br /><br />
 
-                <p><label for="smoking_never">Smoking never:</label></p>
-                <input type="text" id="smoking_never" name="smoking_never"><br><br>
+            <p><label for="smoking_never">Smoking never:</label></p>
+            <input
+              type="text"
+              id="smoking_never"
+              name="smoking_never"
+            /><br /><br />
 
-                <p><label for="smoking_smokes">Smoking smokes</label></p>
-                <input type="text" id="smoking_smokes" name="smoking_smokes"><br><br>
+            <p><label for="smoking_smokes">Smoking smokes</label></p>
+            <input
+              type="text"
+              id="smoking_smokes"
+              name="smoking_smokes"
+            /><br /><br />
 
-                <p><label for="heart_disease_no">Heart disease no:</label></p>
-                <input type="text" id="heart_disease_no" name="heart_disease_no"><br><br>
-                
-                <p><label for="heart_disease_yes">Heart disease yes:</label></p>
-                <input type="text" id="heart_disease_yes" name="heart_disease_yes"><br><br>
+            <p><label for="heart_disease_no">Heart disease no:</label></p>
+            <input
+              type="text"
+              id="heart_disease_no"
+              name="heart_disease_no"
+            /><br /><br />
 
-                <input type="submit" value="Submit">
-              </form>
+            <p><label for="heart_disease_yes">Heart disease yes:</label></p>
+            <input
+              type="text"
+              id="heart_disease_yes"
+              name="heart_disease_yes"
+            /><br /><br />
+
+            <input type="submit" value="Submit" />
+          </form>
         </div>
-    </div>
+      </div>
 
-
-    <div id="footer" class="jumbotron text-center" style="margin-bottom:0">
-        <p>Designed & Developed by Team CUHacks!
-            <br>Team members: <br>
-            <!-- provide linkedIn profiled for everyone -->
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel</a><br>
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Richard Kim</a><br>
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel</a><br>
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel</a><br>
-          </p>
-    </div>
-
-</body>
+      <div id="footer" style="margin-bottom: 0">
+        <p>
+          Designed & Developed by Team CUHacks! <br />Team members:
+          <!-- provide linkedIn profiled for everyone -->
+          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
+            >Anjali Patel</a
+          >
+          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
+            >Richard Kim</a
+          >
+          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
+            >Anjali Patel</a
+          >
+          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
+            >Anjali Patel</a
+          >
+        </p>
+      </div>
+    </section>
+  </body>
 </html>
