@@ -8,6 +8,9 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <link rel="stylesheet" href="src/css/styles.css"/>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
@@ -18,19 +21,26 @@
   <body>
     <script src="/js/events.js"></script>
     <section>
-      <div id="header">
-        <br>
+      <div id="header"style="margin:20px;">
         <h1><b>Patient Medical History Portal</b></h1>
       </div>
 
       <div class="container-fluid">
 
-        <div id="content">
-          <button style="color:black;" class="button signup" onclick="listHistory()"> View History </button>
+        <div class="btnClass" id="content">
+          <button class="btn" id="one" type="button">Test Result from   2023/2/2  </button>
+          <button style="font-size: 0.73em;" class="btn"><i class="fa fa-bars"></i></button> <br>
+
+          <button class="btn" id="two" type="button">Test Result from   2022/2/2 </button>
+          <button style="font-size: 0.73em;" class="btn"><i class="fa fa-bars"></i></button> <br>
+
+          <button class="btn" id="three" type="button">Test Result from   2021/2/2 </button>
+          <button style="font-size: 0.73em;" class="btn"><i class="fa fa-bars"></i></button> <br>
         </div>
+
       </div>
 
-      <div id="footer" style="margin-bottom: 0; padding: 40px;">
+      <div style="margin:20px;" id="footer" style="margin-bottom: 0">
         <p>
           Designed & Developed by Team CUHacks! <br />
           <!-- provide linkedIn profiled for everyone -->
