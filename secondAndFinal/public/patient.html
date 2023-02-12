@@ -15,28 +15,53 @@
 
 <body>
 
-    <div id="header" class="jumbotron text-center">
-        <h1><b>Patient Medical History Portal</b></h1>
-    </div>
+	<section>
+		<div id="header">
+			<p><b>Patient Medical History Portal</b></p>
+			<h4>Welcome your easy-to-manage medical history portal</h4>
+		</div>
+	
+		<div class="container-fluid">
+			<div id="content" >
 
-    <div class="container-fluid">
-        <div id="content" class="jumbotron text-center">
-            <button class="button login">Login</button>
-            <button class="button signup">Sign up</button>
-        </div>
-    </div>
+				<form>
+					<label for="user">Username: </label>
+					<input type="text" id="user" name="user"><br>
+					<label for="pass">Password: </label>
+					<input type="text" id="pass" name="pass" ><br>
+				</form> 
 
+				<div>
+					<button class="button login">
+						<a href="#patientHome"> Login </a>
+					</button> <br>
+				</div>
+				
+				<h6>Don't have an account yet?</h6>
+				<h6>Sign up today to keep track of your medical history!</h6>
+				
+				<button class="button signup">Sign up</button>
+			</div>
+		</div>
 
-    <div id="footer" class="jumbotron text-center" style="margin-bottom:0">
-        <p>Designed & Developed by Team CUHacks!
-            <br>Team members: <br>
-            <!-- provide linkedIn profiled for everyone -->
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel</a><br>
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Richard Kim</a><br>
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel</a><br>
-            <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel</a><br>
-          </p>
-    </div>
+		<div class="heart-rate">
+			<svg version="1.0" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="150px" height="73px" viewBox="0 0 150 73" enable-background="new 0 0 150 73" xml:space="preserve">
+			  <polyline fill="none" stroke="red" stroke-width="3" stroke-miterlimit="10" points="0,45.486 38.514,45.486 44.595,33.324 50.676,45.486 57.771,45.486 62.838,55.622 71.959,9 80.067,63.729 84.122,45.486 97.297,45.486 103.379,40.419 110.473,45.486 150,45.486"
+			  />
+			</svg>
+		</div>
+	
+		<div id="footer"  style="margin-bottom:0">
+			<p>Designed & Developed by Team CUHacks!
+				<br>Team members:
+				<!-- provide linkedIn profiled for everyone -->
+				<a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel, </a>
+				<a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Richard Kim, </a>
+				<a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel, </a>
+				<a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/">Anjali Patel.</a>
+			  </p>
+		</div>
+	</section>
 
 </body>
 </html>
