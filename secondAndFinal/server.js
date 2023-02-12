@@ -8,6 +8,8 @@ let app = express();
 const path = require('path');
 //uuid for unique file names
 const { v4: uuidv4 } = require('uuid');
+const bodyParser = require('body-parser')
+app.use(express.json());
 
 //Getting all the static files and json 
 app.use(express.static("public"));
@@ -22,6 +24,7 @@ console.log(dbInitialization);
 //PATIENT
 //patient home page
 app.get("/patient", (_,res) => {
+    console.log("GET /patient");
     res.sendFile(path.join(__dirname, '/public/patient.html'));
 });
 
@@ -30,6 +33,7 @@ app.get("/patient/signup", (_,res) => {
 });
 
 //POST REQUESTS
+//PATIENT
 app.post("/patient/signup", signup);
 
 function signup(req, res) {
