@@ -18,13 +18,33 @@ console.log("Initializing DB");
 let dbInitialization = execFileSync('python', ['./db/initializer.py']).toString();
 console.log(dbInitialization);
 
+//temporarily, we will keep patient and provider info as a variable
+const patientHCI = '1111222333AA';
+const providerID = '11bf5b37-e0b8-42e0-8dcf-dc8c4aefc000';
+
+//for the demo
+app.get("/patient", (_,res) => {
+    console.log("/patient > history.html");
+    res.sendFile(path.join(__dirname, '/public/history.html'));
+});
+
+app.get("/patient/history", (_,res) => {
+    console.log("/patient/history > history.html");
+    //get user's test result history and send it as an array
+    console.log("Accessing DB to search for test results");
+    let patientTests = execFileSync('python', ['./db/patientTestHistory.py', patientHCI]).toString();
+    console.log(patientTests);
+    res.status(200).send(patientTests);
+});
+
+//later
 //GET REQUESTS
 //PATIENT
 //patient home page
-app.get("/patient", (_,res) => {
-    res.sendFile(path.join(__dirname, '/public/patient.html'));
-    console.log("/patient > patient.html");
-});
+// app.get("/patient", (_,res) => {
+//     res.sendFile(path.join(__dirname, '/public/patient.html'));
+//     console.log("/patient > patient.html");
+// });
 
 app.get("/patient/signup", (_,res) => {
     res.sendFile(path.join(__dirname, '/public/signupsheet.html'));
@@ -41,19 +61,12 @@ app.get("/patient/docu", (_,res) => {
     console.log("/patient/docu > help.html");
 });
 
-app.get("/patient/history", (_,res) => {
-    res.sendFile(path.join(__dirname, '/public/history.html'));
-    console.log("/patient/history > history.html");
-});
-
 //for history details is remaining - needs to get HID to display the url
 //individualvisit.html ==============> this needs to be solved for ID
 app.get("/patient/history/:id", (_,res) => {
     res.sendFile(path.join(__dirname, '/public/individualvisit.html'));
     console.log("/patient/history > history.html");
 });
-
-
 
 //for provider
 app.get("/provider", (_,res) => {
