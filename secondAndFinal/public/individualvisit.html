@@ -8,7 +8,7 @@
       rel="stylesheet"
       href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     />
-    <link rel="stylesheet" href="src/css/styles.css" />
+    <link rel="stylesheet" href="src/css/bootstyles.css" />
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -16,35 +16,58 @@
   </head>
 
   <body>
-    <section>
-      <div id="header">
-        <h1><b>Patient Medical History Portal</b></h1>
-      </div>
+    <div id="header" class="jumbotron text-center">
+      <h1><b>Patient Medical History Portal</b></h1>
+    </div>
 
-      <div class="container-fluid">
-        <div id="content">
-          <p>Visit detail</p>
+    <div class="container-fluid">
+      <div id="content" class="jumbotron text-center">
+        <p>Day of visit:</p>
+        <br />
+
+        <div class="container">
+          <div class="row">
+            <div class="col">Age: 123</div>
+            <br />
+            <div class="col">Glucose: 23.23</div>
+            <br />
+            <div class="w-100"></div>
+            <br />
+            <div class="col">BMI: 12.2</div>
+            <br />
+            <div class="col">BP: 114</div>
+            <br />
+            <br />
+          </div>
         </div>
-      </div>
+        <br />
+        <p>👩‍⚕️ Doctor's recommendation:</p>
+        <br />
+        <div class="row justify-content-center">
+          <div class="col-8">
+            <p>
+              hello there is asdfasdfasdf asd fasd asd fa sdf asdf asdfasdfasdf
+              asdfasd as dfa sdfa sdf
+            </p>
+            <br />
+          </div>
+        </div>
 
-      <div id="footer" style="margin-bottom: 0">
-        <p>
-          Designed & Developed by Team CUHacks! <br />Team members:
-          <!-- provide linkedIn profiled for everyone -->
-          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
-            >Anjali Patel</a
-          >
-          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
-            >Richard Kim</a
-          >
-          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
-            >Anjali Patel</a
-          >
-          <a href="https://www.linkedin.com/in/anjali-patel-3966b41a1/"
-            >Anjali Patel</a
-          >
-        </p>
+        <button
+          class="button login"
+          onclick="window.location.href = 'history.html';"
+        >
+          Return
+        </button>
       </div>
-    </section>
+    </div>
+    <div id="footer" class="jumbotron text-center" style="margin-bottom: 0">
+      Designed & Developed by Team CUHacks! <br /><br />
+      <!-- provide linkedIn profiled for everyone -->
+      <p>Anjali Patel</p>
+      <p>Richard DH Park</p>
+      <p>Feng Du</p>
+      <p>Kyong Ho Kim</p>
+    </div>
   </body>
 </html>
