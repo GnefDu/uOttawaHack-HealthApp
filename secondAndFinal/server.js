@@ -8,8 +8,6 @@ let app = express();
 const path = require('path');
 //uuid for unique file names
 const { v4: uuidv4 } = require('uuid');
-const bodyParser = require('body-parser')
-app.use(express.json());
 
 //Getting all the static files and json 
 app.use(express.static("public"));
@@ -24,16 +22,68 @@ console.log(dbInitialization);
 //PATIENT
 //patient home page
 app.get("/patient", (_,res) => {
-    console.log("GET /patient");
     res.sendFile(path.join(__dirname, '/public/patient.html'));
+    console.log("/patient > patient.html");
 });
 
 app.get("/patient/signup", (_,res) => {
     res.sendFile(path.join(__dirname, '/public/signupsheet.html'));
+    console.log("/patient/signup > signupsheet.html");
 });
 
+app.get("/patient/home", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/patientpostlogin.html'));
+    console.log("/patient/home > patientpostlogin.html");
+});
+
+app.get("/patient/docu", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/help.html'));
+    console.log("/patient/docu > help.html");
+});
+
+app.get("/patient/history", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/history.html'));
+    console.log("/patient/history > history.html");
+});
+
+//for history details is remaining - needs to get HID to display the url
+//individualvisit.html ==============> this needs to be solved for ID
+app.get("/patient/history/:id", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/individualvisit.html'));
+    console.log("/patient/history > history.html");
+});
+
+
+
+//for provider
+app.get("/provider", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/provider.html'));
+    console.log("/provider > provider.html");
+});
+
+app.get("/provider/signup", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/providersignupsheet.html'));
+    console.log("/provider > providersignupsheet.html");
+});
+
+app.get("/provider/home", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/providerpostlogin.html'));
+    console.log("/provider > providerpostlogin.html");
+});
+
+app.get("/provider/history", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/history.html'));
+    console.log("/provider > history.html");
+});
+
+app.get("/provider/form", (_,res) => {
+    res.sendFile(path.join(__dirname, '/public/addtestresults.html'));
+    console.log("/provider > addtestresults.html");
+});
+
+//provider/diagnosis is remaining - not sure about it yet!
+
 //POST REQUESTS
-//PATIENT
 app.post("/patient/signup", signup);
 
 function signup(req, res) {
@@ -43,3 +93,5 @@ function signup(req, res) {
 
 app.listen(3000);
 console.log("Server listening at http://localhost:3000\n");
+
+
